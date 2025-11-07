@@ -62,7 +62,7 @@ By default, the frontend auto-detects environment and uses the appropriate API:
 
 ```js
 const PROD_API_BASE =
-  "https://multi-agent-blog-generator.onrender.com/generate";
+  "https://multi-agent-blog-generator-vugo.onrender.com/generate";
 const LOCAL_API_BASE = "http://localhost:8000/generate";
 ```
 
@@ -93,8 +93,8 @@ def generate_blog(data: BlogRequest):
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/multi-agent-blog-generator.git
-   cd multi-agent-blog-generator
+   git clone https://github.com/kartikmahajan5688/ai-blog-generator-frontend.git
+   cd ai-blog-generator-frontend
    ```
 
 2. Start your backend API (e.g., Flask/FastAPI/Node server).
@@ -124,7 +124,7 @@ vercel
 
 ## 🖼️ Preview
 
-![Screenshot](https://via.placeholder.com/1200x600.png?text=Multi-Agent+Blog+Generator+Preview)
+![App Preview](./assets/image.png)
 
 ---
 
