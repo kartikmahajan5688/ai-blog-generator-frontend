@@ -294,6 +294,20 @@
       const loading = document.getElementById("loading");
       const results = document.getElementById("results");
       const generateBtn = document.getElementById("generateBtn");
+      const apiUrlInput = document.getElementById("apiUrl");
+
+      // --- Dynamically detect environment ---
+      const isLocalhost =
+        window.location.hostname === "localhost" ||
+        window.location.hostname === "127.0.0.1";
+
+      // You can hardcode your Render backend here (use your actual Render URL)
+      const PROD_API_BASE =
+        "https://multi-agent-blog-generator.onrender.com/generate";
+      const LOCAL_API_BASE = "http://localhost:8000/generate";
+
+      // Auto-set the correct base URL
+      apiUrlInput.value = isLocalhost ? PROD_API_BASE : LOCAL_API_BASE;
 
       function showTab(tabName) {
         // Hide all tabs
@@ -315,7 +329,7 @@
         const topic = document.getElementById("topic").value;
         const tone = document.getElementById("tone").value;
         const length = document.getElementById("length").value;
-        const apiUrl = document.getElementById("apiUrl").value;
+        const apiUrl = apiUrlInput.value;
 
         // Show loading
         loading.style.display = "block";
