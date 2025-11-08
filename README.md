@@ -12,6 +12,13 @@ A beautiful, single-page **AI-powered blog generation tool** that connects to a 
 
 ---
 
+## 🔗 Backend Repository
+
+You can find the backend implementation here:  
+👉 [AI Blog Generator Backend](https://github.com/kartikmahajan5688/multi-agent-blog-generator)
+
+---
+
 ## 🏗️ Project Structure
 
 ```
